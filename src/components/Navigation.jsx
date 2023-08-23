@@ -15,10 +15,17 @@ export const Navigation = () => {
         size="lg"
         color="whatsapp.100"
         border="2px solid red"
+        opacity="0.5"
         p="15px"
-        borderRadius="150px"
+        borderRadius="50px"
         fontFamily="fantasy"
-        _hover={{ transition: "bg", bg: "blackAlpha.900" }}
+        _hover={{
+          transition: "bg",
+          bg: "blackAlpha.900",
+          color: "white",
+          textDecoration: "none",
+          opacity: "1",
+        }}
       >
         <Link href="/"> EnJoY</Link>
       </Heading>
