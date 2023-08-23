@@ -15,7 +15,6 @@ export const Navigation = () => {
         size="lg"
         color="whatsapp.100"
         background="green.800"
-        opacity="0.9"
         p="15px"
         borderRadius="50px"
         fontFamily="fantasy"
@@ -25,7 +24,6 @@ export const Navigation = () => {
           bg: "green.200",
           color: "white",
           textDecoration: "none",
-          opacity: "0.2",
         }}
       >
         <Link href="/"> EnJoY</Link>
