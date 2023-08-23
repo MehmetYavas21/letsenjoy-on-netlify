@@ -3,13 +3,13 @@ import { Link, useLoaderData } from "react-router-dom";
 
 export const loader = async ({ params }) => {
   const user = await fetch(
-    `https://my-json-server.typicode.com/MehmetYavas21/party-time/users/${params.userId}`
+    `https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/users/${params.userId}`
   ).then((res) => res.json());
   const events = await fetch(
-    `https://my-json-server.typicode.com/MehmetYavas21/party-time/events`
+    `https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/events`
   ).then((res) => res.json());
   const categories = await fetch(
-    `https://my-json-server.typicode.com/MehmetYavas21/party-time/categories`
+    `https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/categories`
   ).then((res) => res.json());
 
   return {

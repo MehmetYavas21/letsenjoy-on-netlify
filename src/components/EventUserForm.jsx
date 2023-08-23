@@ -8,13 +8,13 @@ import { CategoryFilter } from "./CategoryFilter";
 
 export const loader = async () => {
   const events = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/events"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/events"
   );
   const users = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/users"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/users"
   );
   const categories = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/categories"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/categories"
   );
 
   return {
@@ -77,7 +77,7 @@ export const EventUserForm = () => {
     try {
       const resp = await axios
         .post(
-          "https://my-json-server.typicode.com/MehmetYavas21/party-time/events/",
+          "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/events/",
           formData,
           {
             headers: {

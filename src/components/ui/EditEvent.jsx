@@ -8,15 +8,15 @@ import { CategoryFilter } from "../CategoryFilter";
 
 export const loader = async ({ params }) => {
   const event = await fetch(
-    `https://my-json-server.typicode.com/MehmetYavas21/party-time/events/${params.eventId}`
+    `https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/events/${params.eventId}`
   ).then((res) => res.json());
 
   const users = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/users"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/users"
   ).then((res) => res.json());
 
   const categories = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/categories"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/categories"
   ).then((res) => res.json());
 
   return {
@@ -67,7 +67,7 @@ export const EditEvent = () => {
     try {
       const resp = await axios
         .put(
-          "https://my-json-server.typicode.com/MehmetYavas21/party-time/events/" +
+          "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/events/" +
             event.id,
           formData,
           {

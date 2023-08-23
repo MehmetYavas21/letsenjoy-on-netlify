@@ -10,13 +10,13 @@ import { HeroSection } from "../components/HeroSection";
 
 export const loader = async () => {
   const events = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/events"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/events"
   );
   const users = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/users"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/users"
   );
   const categories = await fetch(
-    "https://my-json-server.typicode.com/MehmetYavas21/party-time/categories"
+    "https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/categories"
   );
 
   return {
@@ -75,7 +75,7 @@ export const EventsPage = () => {
       console.log("answer", answer);
       if (answer.toLowerCase() === "yes") {
         await fetch(
-          `https://my-json-server.typicode.com/MehmetYavas21/party-time/events/${eventId}`,
+          `https://my-json-server.typicode.com/MehmetYavas21/letsenjoy-on-netlify/events/${eventId}`,
           {
             method: "DELETE",
           }
