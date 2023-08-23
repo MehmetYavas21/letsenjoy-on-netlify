@@ -102,7 +102,7 @@ export const EventsPage = () => {
 
   return (
     <Center flexDir="column" alignItems="center">
-      <Box p={6} bg="blue.100">
+      <Box p="40px">
         <HeroSection events={events} />
       </Box>
       <Flex justify="space-between">

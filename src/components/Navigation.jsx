@@ -14,7 +14,7 @@ export const Navigation = () => {
         as="h1"
         size="lg"
         color="whatsapp.100"
-        border="2px solid red"
+        background="green.800"
         opacity="0.5"
         p="15px"
         borderRadius="50px"
