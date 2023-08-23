@@ -1,5 +1,6 @@
 import React from "react";
-import { Flex, Link, Heading } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 export const Navigation = () => {
   return (
@@ -26,37 +27,13 @@ export const Navigation = () => {
           textDecoration: "none",
         }}
       >
-        <Link href="/"> EnJoY</Link>
+        <Link to="/"> EnJoY</Link>
       </Heading>
-      <Flex>
-        <Link
-          href="/"
-          mx={2}
-          _hover={{ transition: "bg", bg: "blackAlpha.300" }}
-        >
-          Home
-        </Link>
-        <Link
-          href="/event/1"
-          mx={2}
-          _hover={{ transition: "bg", bg: "blackAlpha.300" }}
-        >
-          Event
-        </Link>
-        <Link
-          href="/user/1"
-          mx={2}
-          _hover={{ transition: "bg", bg: "blackAlpha.300" }}
-        >
-          User
-        </Link>
-        <Link
-          href="/event/new"
-          mx={2}
-          _hover={{ transition: "bg", bg: "blackAlpha.300" }}
-        >
-          Add
-        </Link>
+      <Flex _hover={{ transition: "bg", bg: "blackAlpha.300" }}>
+        <Link to="/">Home</Link>
+        <Link to="/event/1">Event</Link>
+        <Link to="/user/1">User</Link>
+        <Link to="/event/new">Add</Link>
       </Flex>
     </Flex>
   );
